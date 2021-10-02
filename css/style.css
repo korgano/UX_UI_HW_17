@@ -1,6 +1,7 @@
 body {
     max-width: 100%;
     background-color: #262626;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -38,36 +39,59 @@ h4 {
 }
 
 nav {
-    width: 80%;
-    padding: 1%;
-    background-color: teal;
-    border: 2px solid red;
+    width: 100%;
+    background-color: navy;
+    /* border: 2px solid red; */
 }
 
-nav .li {
+nav img.inline-block {
+    width: 11%;
+    float: left;
+    margin-right: 16em;
+    background-color: #262626;
+}
+
+nav ul li.inline-block {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
+}
+
+nav ul li {
+    padding: 0.5em;
+    row-gap: 2em;
+    /* background-color: turquoise; */
+    font-weight: bold;
+    border: 3px solid transparent;
+    color: whitesmoke;
+}
+
+nav li:hover {
+    border: 3px solid whitesmoke;
+    background-color: green;
 }
 
 .info-box {
-    background-color: blue;
+    background-color: navy;
     padding: .75em;
+    color: whitesmoke;
 }
 
 button {
     padding: .5em;
     width: 90%;
     align-self: stretch;
-    color: white;
+    color: whitesmoke;
     background-color: green;
-    border: 3px solid white;
+    border: 3px solid whitesmoke;
     transition-duration: 0.4s;
+    font-weight: bold;
 }
 
 button:hover {
     color: black;
-    border: 3px solid green;
-    background-color: white;
+    border: 3px solid rgb(1, 192, 1);
+    background-color: whitesmoke;
+    font-weight: bold;
 }
 
 .studyColumn {
@@ -78,7 +102,7 @@ button:hover {
 }
 
 .caseStudy {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     max-width: 3fr;
     grid-template-rows: minmax(200px 1.5fr);
     background-color: green;
@@ -93,11 +117,11 @@ img {
 
 .studyBlurb {
     float: left;
-    max-width: 30%;
+    max-width: 40%;
     max-height: 100%;
     padding: .5em;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
 }
 
 footer {
@@ -106,6 +130,7 @@ footer {
 }
 
 #linkedin {
+    margin-top: 5px;
     margin-left: 20%;
     max-height: 80px;
     vertical-align: middle;
