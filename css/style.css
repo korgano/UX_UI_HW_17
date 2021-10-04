@@ -76,6 +76,12 @@ nav li:hover {
     color: whitesmoke;
 }
 
+.profilePic {
+    max-width: 90%;
+    float: left;
+    margin-bottom: .5em;
+}
+
 button {
     padding: .5em;
     width: 90%;
